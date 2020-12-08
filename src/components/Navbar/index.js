@@ -15,6 +15,15 @@ const Navbar = () => {
                             <NavItem>
                                 <NavLinks to='about'>About</NavLinks>
                             </NavItem>
+                            <NavItem>
+                                <NavLinks to='menu'>Menu</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='services'>About</NavLinks>
+                            </NavItem>
+                            <NavItem>
+                                <NavLinks to='contact'>Contact</NavLinks>
+                            </NavItem>
                         </NavMenu>
                 </NavbarContainer>
             </Nav>
