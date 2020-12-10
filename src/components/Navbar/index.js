@@ -1,13 +1,14 @@
 import React from 'react'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements'
 import MenuIcon from '@material-ui/icons/Menu';
+import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 
 const Navbar = ({ toggle }) => {
     return (
         <>
             <Nav>
                 <NavbarContainer>
-                    <NavLogo to='/'>Boba</NavLogo>
+                    <NavLogo to='/'><LocalCafeIcon />&nbsp; Boba</NavLogo>
                         <MobileIcon onClick={toggle}>
                             <MenuIcon />
                         </MobileIcon>
