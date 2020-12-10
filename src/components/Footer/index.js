@@ -3,6 +3,7 @@ import { FooterContainer, FooterLink, FooterLinkItems, FooterLinksContainer, Foo
 import FacebookIcon from '@material-ui/icons/Facebook';
 import TwitterIcon from '@material-ui/icons/Twitter';
 import InstagramIcon from '@material-ui/icons/Instagram';
+import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import {animateScroll as scroll} from 'react-scroll';
 
 const Footer = () => {
@@ -61,7 +62,7 @@ const Footer = () => {
                 <SocialMedia>
                     <SocialMediaWrap>
                         <SocialLogo to='/' onClick={toggleHome}>
-                            Boba
+                            <LocalCafeIcon />&nbsp; Boba
                         </SocialLogo>
                         <WebsiteRights>Boba &copy; {new Date().getFullYear()} All Rights Reserved.</WebsiteRights>
                         <SocialIcon>
