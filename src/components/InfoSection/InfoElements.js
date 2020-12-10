@@ -86,6 +86,9 @@ export const BtnWrap = styled.div`
 `
 
 export const ImgWrap = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 300px;
     height: 100%;
 `;

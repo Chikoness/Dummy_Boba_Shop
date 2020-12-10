@@ -1,9 +1,8 @@
 import React from 'react'
 import { Button } from '../ButtonElement'
 import { BtnWrap, Column1, Column2, Heading, InfoContainer, InfoRow, InfoWrapper, Subtitle, TextWrapper, TopLine, ImgWrap, Img } from './InfoElements'
-import imageOne from '../../images/img-1.png'
 
-const Info = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, alt, primary, dark, dark2}) => {
+const Info = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, alt, img, primary, dark, dark2}) => {
     return (
         <>
         <InfoContainer lightBg={lightBg} id={id}>
@@ -31,7 +30,7 @@ const Info = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, de
                     </Column1>
                     <Column2>
                         <ImgWrap>
-                            <Img src={imageOne} alt={alt} />
+                            <Img src={img} alt={alt} />
                         </ImgWrap>
                     </Column2>
                 </InfoRow>
