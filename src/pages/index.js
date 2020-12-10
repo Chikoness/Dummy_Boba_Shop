@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import Footer from '../components/Footer'
 import HeroSection from '../components/HeroSection'
 import Info from '../components/InfoSection'
 import { aboutSection, servicesSection, contactSection } from '../components/InfoSection/Data'
@@ -21,6 +22,7 @@ const Home = () => {
             <Menu />
             <Info {...servicesSection} />
             <Info {...contactSection} />
+            <Footer />
         </>
 
     )

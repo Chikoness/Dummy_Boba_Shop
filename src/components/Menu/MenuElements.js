@@ -74,7 +74,8 @@ export const MenuH1 = styled.h1`
 `;
 
 export const MenuH2 = styled.h2`
-    font-size: 1rem;
+    color: #227C9D;
+    font-size: 1.5rem;
     margin-bottom: 10px;
 `;
 
