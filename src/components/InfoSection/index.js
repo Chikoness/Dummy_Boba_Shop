@@ -3,7 +3,7 @@ import { Button } from '../ButtonElement'
 import { BtnWrap, Column1, Column2, Heading, InfoContainer, InfoRow, InfoWrapper, Subtitle, TextWrapper, TopLine, ImgWrap, Img } from './InfoElements'
 import imageOne from '../../images/img-1.png'
 
-const Info = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, alt}) => {
+const Info = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, alt, primary, dark, dark2}) => {
     return (
         <>
         <InfoContainer lightBg={lightBg} id={id}>
@@ -15,7 +15,17 @@ const Info = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, de
                             <Heading lightText={lightText}>{headLine}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
                             <BtnWrap>
-                                <Button to='home'>{buttonLabel}</Button>
+                                <Button to='home' 
+                                    smooth={true} 
+                                    duration={500} 
+                                    spy={true} 
+                                    exact="true" 
+                                    offset={-80} 
+                                    primary={primary ? 1 : 0}
+                                    dark={dark ? 1 : 0}
+                                    dark2={dark2 ? 1 : 0}>
+                                        {buttonLabel}
+                                    </Button>
                             </BtnWrap>
                         </TextWrapper>
                     </Column1>
