@@ -1,5 +1,4 @@
 import imageOne from '../../images/img-1.png'
-import imageTwo from '../../images/bobamenu.jpg'
 import imageThree from '../../images/contact-us.svg'
 
 export const aboutSection = {
@@ -10,6 +9,7 @@ export const aboutSection = {
     topLine: 'About BobaShop',
     headLine: 'How did we start',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    buttonVisibility : false,
     buttonLabel: 'Back to Top',
     imgStart: true,
     img: imageOne,
@@ -19,23 +19,6 @@ export const aboutSection = {
     darkText: false
 }
 
-// export const menuSection = {
-//     id: 'menu',
-//     lightBg: true,
-//     lightText: false,
-//     lightTextDesc: true,
-//     topLine: 'Menu',
-//     headLine: 'Boba products',
-//     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
-//     buttonLabel: 'Back to Top',
-//     imgStart: false,
-//     img: imageTwo,
-//     alt: 'Boba-2',
-//     dark: true,
-//     primary: true,
-//     darkText: true
-// }
-
 export const servicesSection = {
     id: 'services',
     lightBg: false,
@@ -44,8 +27,9 @@ export const servicesSection = {
     topLine: 'Services',
     headLine: 'What we do',
     description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+    buttonVisibility : false,
     buttonLabel: 'Back to Top',
-    imgStart: true,
+    imgStart: false,
     img: imageOne,
     alt: 'Boba',
     dark: true,
@@ -61,8 +45,9 @@ export const contactSection = {
     topLine: 'Contact',
     headLine: 'Reach out to us!',
     description: 'Reach out to us at Boba@boba.com or call us at +01 234 5678',
+    buttonVisibility : true,
     buttonLabel: 'Back to Top',
-    imgStart: false,
+    imgStart: true,
     img: imageThree,
     alt: 'Boba-2',
     dark: true,

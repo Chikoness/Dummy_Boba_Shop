@@ -2,7 +2,7 @@ import React from 'react'
 import { Button } from '../ButtonElement'
 import { BtnWrap, Column1, Column2, Heading, InfoContainer, InfoRow, InfoWrapper, Subtitle, TextWrapper, TopLine, ImgWrap, Img } from './InfoElements'
 
-const Info = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, alt, img, primary, dark, dark2}) => {
+const Info = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, description, buttonLabel, alt, img, primary, dark, dark2, buttonVisibility}) => {
     return (
         <>
         <InfoContainer lightBg={lightBg} id={id}>
@@ -13,7 +13,7 @@ const Info = ({lightBg, id, imgStart, topLine, lightText, headLine, darkText, de
                             <TopLine>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headLine}</Heading>
                             <Subtitle darkText={darkText}>{description}</Subtitle>
-                            <BtnWrap>
+                            <BtnWrap buttonVisibility={buttonVisibility}>
                                 <Button to='home' 
                                     smooth={true} 
                                     duration={500} 

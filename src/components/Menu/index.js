@@ -1,4 +1,9 @@
 import React from 'react'
+import { MenuCard, MenuContainer, MenuH1, MenuH2, MenuIcon, MenuP, MenuWrapper } from './MenuElements'
+import Icon1 from '../../images/menu/milktea.png'
+import Icon2 from '../../images/menu/coffee.png'
+import Icon3 from '../../images/menu/fruittea.png'
+import Icon4 from '../../images/menu/toppings.png'
 
 const Menu = () => {
     return (

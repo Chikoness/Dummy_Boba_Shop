@@ -9,6 +9,7 @@ const HeroSection = () => {
             <HeroBg>
                 <ImgBg src={CoverPicture} />
                 <ImgBg src={CoverPicture2} />
+                <ImgBg src={CoverPicture} />
             </HeroBg>
             <HeroContent>
                 <HeroH1>Welcome to Boba Shop!</HeroH1>
