@@ -5,7 +5,7 @@ import CoverPicture2 from '../../images/boba2.jpg'
 
 const HeroSection = () => {
     return (
-        <HeroContainer>
+        <HeroContainer id='top'>
             <HeroBg>
                 <ImgBg src={CoverPicture} />
                 <ImgBg src={CoverPicture2} />
