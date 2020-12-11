@@ -7,10 +7,33 @@ const Sidebar = ({isOpen, toggle}) => {
             <Icon onClick={toggle} />
             <SidebarWrapper>
                 <SidebarMenu>
-                    <SidebarLink to="about" onClick={toggle}>About</SidebarLink>
-                    <SidebarLink to="menu" onClick={toggle}>Menu</SidebarLink>
-                    <SidebarLink to="services" onClick={toggle}>Services</SidebarLink>
-                    <SidebarLink to="contact" onClick={toggle}>Contact</SidebarLink>
+                    <SidebarLink to="about" onClick={toggle} 
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}>
+                                        About</SidebarLink>
+                    <SidebarLink to="menu" onClick={toggle}
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}>Menu</SidebarLink>
+                    <SidebarLink to="services" onClick={toggle}
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}>
+                        Services</SidebarLink>
+                    <SidebarLink to="contact" onClick={toggle}
+                                    smooth={true}
+                                    duration={500}
+                                    spy={true}
+                                    exact='true'
+                                    offset={-80}>
+                        Contact</SidebarLink>
                 </SidebarMenu>
             </SidebarWrapper>
         </SidebarContainer>
