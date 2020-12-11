@@ -4,7 +4,7 @@ import CloseIcon from '@material-ui/icons/Close';
 import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import {animateScroll as scroll} from 'react-scroll';
 
-const Navbar = ({ toggleAndHandleClick, click }) => {
+const Navbar = ({ toggle, click }) => {
     const toggleHome = () => {
         scroll.scrollToTop();
     }
@@ -14,7 +14,7 @@ const Navbar = ({ toggleAndHandleClick, click }) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/' onClick={toggleHome}><LocalCafeIcon />&nbsp; Boba</NavLogo>
-                        <MobileIcon onClick={toggleAndHandleClick}>
+                        <MobileIcon onClick={toggle}>
                             {click ? <CloseIcon /> : <MenuIcon />}
                         </MobileIcon>
                         <NavMenu>
