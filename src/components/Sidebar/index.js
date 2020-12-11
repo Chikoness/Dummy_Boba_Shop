@@ -1,12 +1,10 @@
 import React from 'react'
-import { Icon, SidebarContainer, CloseI, SidebarMenu, SidebarLink, SidebarWrapper } from './SidebarElements'
+import { Icon, SidebarContainer, SidebarMenu, SidebarLink, SidebarWrapper } from './SidebarElements'
 
 const Sidebar = ({isOpen, toggle}) => {
     return (
         <SidebarContainer isOpen={isOpen} onClick={toggle}>
-            <Icon onClick={toggle}>
-                <CloseI />
-            </Icon>
+            <Icon onClick={toggle} />
             <SidebarWrapper>
                 <SidebarMenu>
                     <SidebarLink to="about" onClick={toggle}>About</SidebarLink>

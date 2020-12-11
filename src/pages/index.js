@@ -9,14 +9,22 @@ import Sidebar from '../components/Sidebar'
 
 const Home = () => {
     const [isOpen, setIsOpen] = useState(false)
+    const [click, setClick] = useState(false);
+    
     const toggle = () => {
         setIsOpen(!isOpen)
     }
+
+    const toggleAndHandleClick = () => {
+        setIsOpen(!isOpen)
+        setClick(!click)
+    }
+
     
     return (
         <>
             <Sidebar isOpen={isOpen} toggle={toggle}/>
-            <Navbar toggle={toggle}/>
+            <Navbar toggleAndHandleClick={toggleAndHandleClick} click={click}/>
             <HeroSection />
             <Info {...aboutSection}/>
             <Menu />

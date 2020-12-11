@@ -1,24 +1,18 @@
 import styled from 'styled-components'
-import CloseIcon from '@material-ui/icons/Close';
 import { Link as LinkS } from 'react-scroll'
 
 export const SidebarContainer = styled.aside`
     position: fixed;
     z-index: 999;
-    width: 100%;
+    width: 65%;
     height: 100%;
-    background: #17C3B2;
+    background: #FE6D73;
     display: grid;
-    align-items: center;
-    top: 0;
-    left: 0;
+    top: 80px;
+    right: 0;
     transition: 0.3s ease-in-out;
     opacity: ${({ isOpen}) => (isOpen ? '100%' : '0')};
-    top: ${({ isOpen}) => (isOpen ? '0' : '-100%')};
-`;
-
-export const CloseI = styled(CloseIcon)`
-    color: #fff;
+    right: ${({ isOpen}) => (isOpen ? '0' : '-100%')};
 `;
 
 export const Icon = styled.div`
@@ -50,7 +44,7 @@ export const SidebarLink = styled(LinkS)`
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-decoration: none;
     list-style: none;
     transition: 0.2s ease-in-out;

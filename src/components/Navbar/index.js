@@ -1,10 +1,10 @@
-import React from 'react'
 import { Nav, NavbarContainer, NavLogo, MobileIcon, NavMenu, NavItem, NavLinks } from './NavbarElements'
 import MenuIcon from '@material-ui/icons/Menu';
+import CloseIcon from '@material-ui/icons/Close';
 import LocalCafeIcon from '@material-ui/icons/LocalCafe';
 import {animateScroll as scroll} from 'react-scroll';
 
-const Navbar = ({ toggle }) => {
+const Navbar = ({ toggleAndHandleClick, click }) => {
     const toggleHome = () => {
         scroll.scrollToTop();
     }
@@ -14,8 +14,8 @@ const Navbar = ({ toggle }) => {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/' onClick={toggleHome}><LocalCafeIcon />&nbsp; Boba</NavLogo>
-                        <MobileIcon onClick={toggle}>
-                            <MenuIcon />
+                        <MobileIcon onClick={toggleAndHandleClick}>
+                            {click ? <CloseIcon /> : <MenuIcon />}
                         </MobileIcon>
                         <NavMenu>
                             <NavItem>
